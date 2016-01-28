@@ -874,11 +874,11 @@ S2.define('select2/results',[
       // Check if there are any selected options
       if ($selected.length > 0) {
         // If there are selected options, highlight the first
-        $selected.first().trigger('mouseenter');
+        //$selected.first().trigger('mouseenter'); // important!
       } else {
         // If there are no selected options, highlight the first option
         // in the dropdown
-        $options.first().trigger('mouseenter');
+        //$options.first().trigger('mouseenter'); // important!
       }
     });
   };
@@ -4086,7 +4086,7 @@ S2.define('select2/dropdown/attachBody',[
     });
 
     container.on('close', function () {
-      self._hideDropdown();
+      //self._hideDropdown();   // important!
       self._detachPositioningHandler(container);
     });
 
