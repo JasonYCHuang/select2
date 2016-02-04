@@ -470,9 +470,15 @@
   border-top: none; }
 
 .select2-container--classic .select2-results > .select2-results__options {
-  height: calc(100vh - 568px); /* modify dropdown */
+  height: calc(100vh - 455px); /* modify dropdown */
   overflow-y: scroll; /* modify dropdown */
   overflow-x: hidden;} /* modify dropdown */
+
+@media only screen and (max-height: 660px) {
+  .select2-container--classic .select2-results > .select2-results__options {
+    height: calc(100vh - 365px);
+  }
+}
 
 .select2-container--classic .select2-results__option[role=group] {
   padding: 0; }
